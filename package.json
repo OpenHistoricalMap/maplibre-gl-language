@@ -1,7 +1,7 @@
 {
-  "name": "@mapbox/mapbox-gl-language",
+  "name": "@openhistoricalmap/maplibre-gl-language",
   "version": "1.0.1",
-  "description": "Mapbox GL JS plugin for switching map language to the browser language.",
+  "description": "MapLibre GL JS plugin for switching map language to the browser language.",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -12,9 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mapbox/mapbox-gl-language.git"
+    "url": "https://github.com/OpenHistoricalMap/maplibre-gl-language.git"
   },
   "keywords": [
+    "openhistoricalmap",
+    "maplibre",
     "mapbox",
     "gis",
     "vector",
@@ -24,9 +26,9 @@
   "author": "Lukas Martinelli",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/mapbox/mapbox-gl-language/issues"
+    "url": "https://github.com/OpenHistoricalMap/issues/issues"
   },
-  "homepage": "https://github.com/mapbox/mapbox-gl-language#readme",
+  "homepage": "https://github.com/OpenHistoricalMap/maplibre-gl-language#readme",
   "devDependencies": {
     "documentation": "^14.0.0",
     "eslint": "^8.24.0",

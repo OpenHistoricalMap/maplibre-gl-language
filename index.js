@@ -99,12 +99,12 @@ function changeLayerTextProperty(isLangField, layer, languageFieldName, excluded
 
 function findStreetsSource(style) {
   const sources = Object.keys(style.sources).filter((sourceName) => {
-    const url = style.sources[sourceName].url;
+    const url = style.sources[sourceName].tiles[0];
     // the source URL can reference the source version or the style version
     // this check and the error forces users to migrate to styles using source version 8
-    return url && url.indexOf('mapbox.mapbox-streets-v8') > -1 || /mapbox-streets-v[1-9][1-9]/.test(url);
+    return url;
   });
-  if (!sources.length) throw new Error('If using MapboxLanguage with a Mapbox style, the style must be based on vector tile version 8, e.g. "streets-v11"');
+  if (!sources.length) throw new Error('Sources, or url for tile sources, not found"');
   return sources[0];
 }
 
